@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Audio</title>
+</head>
+<body>
+    <div class="corps">
+
+        <div class="localplaylist1">
+            <p>Local playlist 1 </p>
+            <i class='bx bx-chevron-down'></i>
+        </div>
+
+        <div class="screen-list">
+
+            <div class="screen">
+                <img id ="image" class="image" src="music/Capture d’écran 2021-11-01 150504.png" alt="image de music">
+                <p id="heure" class="temps"> <span id="timeSongProgress">0:00</span>  / <span id="timeSongTotal">0:00</span></p>
+                <!-- <div id="increaseMainBarre" class="creasebarre">
+                    <div id="nivelIncrease" class="nivelcrease"></div>
+                </div> -->
+            </div>
+
+            <div class="list">
+                <div class="title-volume" id="blockTitleVolume">
+                    <div class="controlBtnTitleSong">
+                        <span id="audioplay"><i class='bx bx-play'></i></span>
+                        <span id ="audioStop"><i class='bx bx-stop'></i></span>
+                        <p id="titleSong" class="song-title"> </p>
+                    </div>
+                    
+                    <div class="volumebarreIcone">
+                        <span id="iconVolume"><i class='bx bxs-volume-full'></i></span>
+                        <div id="volumeBarre" class="volume">
+                            <div id="volumeProgress" class="volume-progres"></div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="chanson">
+                    <div class="audioPlayer">
+                        <audio id="audio" src="">
+                            <source src="" id="audioSource" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="bloc-titre">
+                        <div class="iconeDeleteDownload">
+                            <i class='bx bx-downvote'></i>
+                            <i class='bx bx-x'></i>
+                        </div>
+                        <p class="titre" id="titre" data-audio="music/Runtown   SHOW2BABI.COM.mp3">01 -Runtown SHOW2BABI.COM.mp3</p>
+                    </div>
+    
+                    <div class="bloc-titre">
+                        <div class="iconeDeleteDownload">
+                            <i class='bx bx-downvote'></i>
+                            <i class='bx bx-x'></i>
+                        </div>
+                        <p class="titre" id="songName" data-audio="music/Dj Leo - Faut Bara SHOW2BABI.COM.mp3">02 -Dj Leo - Faut Bara SHOW2BABI.COM.mp3</p>
+                    </div>
+    
+                    <div class="bloc-titre">
+                        <div class="iconeDeleteDownload">
+                            <i class='bx bx-downvote'></i>
+                            <i class='bx bx-x'></i>
+                        </div>
+                        <p class="titre" id="songName" data-audio="music/Black M - Frérot ft. Soprano_HIGH.m4a" >03 -Black M - Frérot ft. Soprano_HIGH.m4a</p>
+                    </div>
+    
+                    <div class="bloc-titre">
+                        <div class="iconeDeleteDownload">
+                            <i class='bx bx-downvote'></i>
+                            <i class='bx bx-x'></i>
+                        </div>
+                        <p class="titre" id="songName" data-audio="music/keblack ft fababy ft naza_température.mp3">04 - keblack ft fababy ft naza_température.mp3</p>
+                    </div>
+    
+                    <div class="bloc-titre">
+                        <div class="iconeDeleteDownload">
+                            <i class='bx bx-downvote'></i>
+                            <i class='bx bx-x'></i>
+                        </div>
+                        <p class="titre"id="songName" data-audio="music/kiff no beat-ils ont dit.mp3">05 - kiff no beat-ils ont dit.mp3</p>
+                    </div>
+    
+                    <div class="bloc-titre">
+                        <div class="iconeDeleteDownload">
+                            <i class='bx bx-downvote'></i>
+                            <i class='bx bx-x'></i>
+                        </div>
+                        <p class="titre" id="songName" data-audio="music/kiff no beat-possede(58545).m4a">06 - kiff no beat-possede(58545).m4a</p>
+                    </div>
+                    
+                    <div class="bloc-titre">
+                        <div class="iconeDeleteDownload">
+                            <i class='bx bx-downvote' id="download"></i>
+                            <i class='bx bx-x' id="delete"></i>
+                        </div>
+                        <p class="titre" id="songName" data-audio="music/Lucky Dube-1.mp3">07 - Lucky Dube-1.mp3</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+    <script src="style/script.js"></script>
+</body>
+</html>
