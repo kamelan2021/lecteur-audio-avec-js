@@ -63,12 +63,12 @@ audioList.forEach(function(audioSingle){
                 audio.addEventListener("timeupdate",function(){
                     var s2 = parseInt(audio.currentTime % 60);
                     var m2 = parseInt((audio.currentTime / 60) % 60);
-                    timeSongProgress.innerHTML = m2 + ":" + s2;
+//                     timeSongProgress.innerHTML = m2 + ":" + s2;
                 })
-                if(s == s2 && m == m2){
-                    audioplay.innerHTML = "<i class='bx bx-play'></i>";
-                    audio.pause();
-                }
+//                 if(s == s2 && m == m2){
+//                     audioplay.innerHTML = "<i class='bx bx-play'></i>";
+//                     audio.pause();
+//                 }
             },200)
             
     })
